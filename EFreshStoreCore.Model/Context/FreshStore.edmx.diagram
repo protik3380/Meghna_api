@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6cc94f3befba44b684b452367060be22" Name="Diagram1" ZoomLevel="54">
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.Brand" Width="1.5" PointX="1.5" PointY="2.625" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.Cart" Width="1.5" PointX="5.25" PointY="26" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.Category" Width="1.5" PointX="1.5" PointY="10.625" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.CorporateContract" Width="1.5" PointX="3" PointY="48.125" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.CorporateDepartment" Width="1.5" PointX="3" PointY="41.125" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.CorporateDesignation" Width="1.5" PointX="3" PointY="44.625" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.CorporateUser" Width="1.5" PointX="5.25" PointY="35.5" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.Coupon" Width="1.5" PointX="3" PointY="23" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.Customer" Width="1.5" PointX="5.25" PointY="48.625" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.DeliveryMan" Width="1.5" PointX="5.25" PointY="30" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.Distributor" Width="1.5" PointX="10.5" PointY="59.5" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.DistributorProductLine" Width="1.5" PointX="12.75" PointY="59.875" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.District" Width="1.5" PointX="0.75" PointY="36.875" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.Location" Width="1.5" PointX="3.75" PointY="0.75" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.MasterDepot" Width="1.5" PointX="5.25" PointY="59.25" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.MasterDepotDeliveryMan" Width="1.5" PointX="10.5" PointY="46" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.MasterDepotProductLine" Width="1.5" PointX="7.5" PointY="60.625" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.MeghnaDepartment" Width="1.5" PointX="6" PointY="22.125" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.MeghnaDesignation" Width="1.5" PointX="6" PointY="18.625" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.MeghnaUser" Width="1.5" PointX="8.25" PointY="24.625" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.Order" Width="1.5" PointX="7.5" PointY="44.25" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.OrderDetail" Width="1.5" PointX="12.75" PointY="45.5" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.OrderHistory" Width="1.5" PointX="9.75" PointY="39.125" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.OrderReject" Width="1.5" PointX="5.25" PointY="44.75" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.OrderState" Width="1.5" PointX="5.25" PointY="42.125" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.Product" Width="1.5" PointX="0.75" PointY="16.25" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.ProductDiscount" Width="1.5" PointX="5.25" PointY="3.375" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.ProductImage" Width="1.5" PointX="5.25" PointY="12.75" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.ProductLine" Width="1.5" PointX="10.5" PointY="54.875" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.ProductLineDetail" Width="1.5" PointX="12.75" PointY="36.25" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.ProductType" Width="1.5" PointX="1.5" PointY="6.75" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.ProductUnit" Width="1.5" PointX="3" PointY="15.5" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.ProductUnitPrice" Width="1.5" PointX="5.25" PointY="8.25" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.Rating" Width="1.5" PointX="8.25" PointY="30.75" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.Subscriber" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.Thana" Width="1.5" PointX="3" PointY="36.375" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.ThanaWiseMasterDepot" Width="1.5" PointX="7.5" PointY="57.625" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.User" Width="1.5" PointX="3" PointY="29.625" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.UserDiscount" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.UserType" Width="1.5" PointX="0.75" PointY="28.875" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.WishList" Width="1.5" PointX="8.25" PointY="34.875" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_Product_Brand" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_Cart_ProductUnit" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_Cart_User" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_Category_ProductType" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_Product_Category" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_CorporateUser_CorporateContract" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_CorporateUser_CorporateDepartment" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_CorporateUser_CorporateDesignation" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_CorporateUser_User" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_Coupon_UserType" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_Customer_User" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_DeliveryMan_Thana" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_DeliveryMan_User" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_MasterDepotDeliveryMan_DeliveryMan" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_Distributor_MasterDepot" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_Distributor_Thana" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_DistributorProductLine_Distributor" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_DistributorProductLine_ProductLine" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_Thana_District" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_MasterDepot_User" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_MasterDepotDeliveryMan_MasterDepot" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_MasterDepotProductLine_MasterDepot" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_Order_MasterDepot" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_ThanaWiseMasterDepot_MasterDepot" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_MasterDepotProductLine_ProductLine" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_MeghnaUser_MeghnaDepartment" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_MeghnaUser_MeghnaDesignation" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_MeghnaUser_User" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_Order_OrderReject" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_Order_OrderState" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_Order_Thana" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_Order_User" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_OrderDetails_Order" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_OrderHistory_Order" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_OrderDetails_ProductUnit" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_OrderHistory_OrderState" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_OrderHistory_User" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_ProductLineDetails_Product" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_ProductUnit_Product" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_ProductDiscount_ProductUnit" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_ProductImage_ProductUnit" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_ProductLineDetails_ProductLine" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_ProductUnitPrice_ProductUnit" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_Rating_ProductUnit" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_WishList_ProductUnit" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_Rating_User" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_ThanaWiseMasterDepot_Thana" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_User_UserType" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_WishList_User" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.AssignOrder" Width="1.5" PointX="12.75" PointY="39.25" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_AssignOrders_DeliveryMan" />
+        <AssociationConnector Association="EFreshStoreCore.Model.Context.FK_AssignOrders_Order" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.FAQ" Width="1.5" PointX="7.375" PointY="4.75" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.Configuration" Width="1.5" PointX="7.375" PointY="8.75" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.DeliveryCharge" Width="1.5" PointX="9.375" PointY="4.75" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.PaymentDetail" Width="1.5" PointX="9.375" PointY="8.75" />
+        <EntityTypeShape EntityType="EFreshStoreCore.Model.Context.LPGComboDiscount" Width="1.5" PointX="10.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

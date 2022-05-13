@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8552C548-9315-4A6A-AE8B-FD5A8A0C8D93}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EFreshStoreCore.Manager</RootNamespace>
+    <AssemblyName>EFreshStoreCore.Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssignOrderManager.cs" />
+    <Compile Include="BrandManager.cs" />
+    <Compile Include="CartManager.cs" />
+    <Compile Include="CategoryManager.cs" />
+    <Compile Include="CommonManager.cs" />
+    <Compile Include="ConfigurationManager.cs" />
+    <Compile Include="CorporateContractManager.cs" />
+    <Compile Include="CorporateDepartmentManager.cs" />
+    <Compile Include="CorporateDesignationManager.cs" />
+    <Compile Include="CorporateUserManager.cs" />
+    <Compile Include="CouponManager.cs" />
+    <Compile Include="CustomerManager.cs" />
+    <Compile Include="DeliveryChargeManager.cs" />
+    <Compile Include="DeliveryManManager.cs" />
+    <Compile Include="DistributorManager.cs" />
+    <Compile Include="DistributorProductLineManager.cs" />
+    <Compile Include="DistrictManager.cs" />
+    <Compile Include="FAQManager.cs" />
+    <Compile Include="LPGComboDiscountManager.cs" />
+    <Compile Include="MasterDepotDeliveryManManager.cs" />
+    <Compile Include="MasterDepotManager.cs" />
+    <Compile Include="MasterDepotProductLineManager.cs" />
+    <Compile Include="MeghnaDepartmentManager.cs" />
+    <Compile Include="MeghnaDesignationManager.cs" />
+    <Compile Include="MeghnaUserManager.cs" />
+    <Compile Include="OrderDetailManager.cs" />
+    <Compile Include="OrderHistoryManager.cs" />
+    <Compile Include="OrderManager.cs" />
+    <Compile Include="OrderRejectManager.cs" />
+    <Compile Include="OrderStateManager.cs" />
+    <Compile Include="PaymentDetailManager.cs" />
+    <Compile Include="ProductDiscountManager.cs" />
+    <Compile Include="ProductImageManager.cs" />
+    <Compile Include="ProductLineDetailManager.cs" />
+    <Compile Include="ProductLineManager.cs" />
+    <Compile Include="ProductManager.cs" />
+    <Compile Include="ProductTypeManager.cs" />
+    <Compile Include="ProductUnitManager.cs" />
+    <Compile Include="ProductUnitPriceManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RatingManager.cs" />
+    <Compile Include="SubscriberManager.cs" />
+    <Compile Include="ThanaManager.cs" />
+    <Compile Include="ThanaWiseMasterDepotManager.cs" />
+    <Compile Include="UserDiscountManager.cs" />
+    <Compile Include="UserManager.cs" />
+    <Compile Include="UserTypeManager.cs" />
+    <Compile Include="WishListManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EFreshStoreCore.Model\EFreshStoreCore.Model.csproj">
+      <Project>{e0173de8-2863-43d0-ae95-1cc65731d634}</Project>
+      <Name>EFreshStoreCore.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EFreshStoreCore.Repository\EFreshStoreCore.Repository.csproj">
+      <Project>{25264ded-d855-4578-9bcf-0688596bcc97}</Project>
+      <Name>EFreshStoreCore.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

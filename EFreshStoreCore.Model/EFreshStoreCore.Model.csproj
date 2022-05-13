@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E0173DE8-2863-43D0-AE95-1CC65731D634}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EFreshStoreCore.Model</RootNamespace>
+    <AssemblyName>EFreshStoreCore.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context\EntityModels\AssignOrder.cs" />
+    <Compile Include="Context\EntityModels\Brand.cs" />
+    <Compile Include="Context\EntityModels\Cart.cs" />
+    <Compile Include="Context\EntityModels\Category.cs" />
+    <Compile Include="Context\EntityModels\Configuration.cs" />
+    <Compile Include="Context\EntityModels\CorporateContract.cs" />
+    <Compile Include="Context\EntityModels\CorporateDepartment.cs" />
+    <Compile Include="Context\EntityModels\CorporateDesignation.cs" />
+    <Compile Include="Context\EntityModels\CorporateUser.cs" />
+    <Compile Include="Context\EntityModels\Coupon.cs" />
+    <Compile Include="Context\EntityModels\Customer.cs" />
+    <Compile Include="Context\EntityModels\DeliveryCharge.cs" />
+    <Compile Include="Context\EntityModels\DeliveryMan.cs" />
+    <Compile Include="Context\EntityModels\Distributor.cs" />
+    <Compile Include="Context\EntityModels\DistributorProductLine.cs" />
+    <Compile Include="Context\EntityModels\District.cs" />
+    <Compile Include="Context\EntityModels\FAQ.cs" />
+    <Compile Include="Context\EntityModels\FreshContext.cs" />
+    <Compile Include="Context\EntityModels\Location.cs" />
+    <Compile Include="Context\EntityModels\LPGComboDiscount.cs" />
+    <Compile Include="Context\EntityModels\MasterDepot.cs" />
+    <Compile Include="Context\EntityModels\MasterDepotDeliveryMan.cs" />
+    <Compile Include="Context\EntityModels\MasterDepotProductLine.cs" />
+    <Compile Include="Context\EntityModels\MeghnaDepartment.cs" />
+    <Compile Include="Context\EntityModels\MeghnaDesignation.cs" />
+    <Compile Include="Context\EntityModels\MeghnaUser.cs" />
+    <Compile Include="Context\EntityModels\Order.cs" />
+    <Compile Include="Context\EntityModels\OrderDetail.cs" />
+    <Compile Include="Context\EntityModels\OrderHistory.cs" />
+    <Compile Include="Context\EntityModels\OrderReject.cs" />
+    <Compile Include="Context\EntityModels\OrderState.cs" />
+    <Compile Include="Context\EntityModels\PaymentDetail.cs" />
+    <Compile Include="Context\EntityModels\Product.cs" />
+    <Compile Include="Context\EntityModels\ProductDiscount.cs" />
+    <Compile Include="Context\EntityModels\ProductImage.cs" />
+    <Compile Include="Context\EntityModels\ProductLine.cs" />
+    <Compile Include="Context\EntityModels\ProductLineDetail.cs" />
+    <Compile Include="Context\EntityModels\ProductType.cs" />
+    <Compile Include="Context\EntityModels\ProductUnit.cs" />
+    <Compile Include="Context\EntityModels\ProductUnitPrice.cs" />
+    <Compile Include="Context\EntityModels\Rating.cs" />
+    <Compile Include="Context\EntityModels\Subscriber.cs" />
+    <Compile Include="Context\EntityModels\Thana.cs" />
+    <Compile Include="Context\EntityModels\ThanaWiseMasterDepot.cs" />
+    <Compile Include="Context\EntityModels\User.cs" />
+    <Compile Include="Context\EntityModels\UserDiscount.cs" />
+    <Compile Include="Context\EntityModels\UserType.cs" />
+    <Compile Include="Context\EntityModels\WishList.cs" />
+    <Compile Include="Context\FreshStore.Designer.cs" />
+    <Compile Include="Context\FreshStore1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FreshStore.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ModelExtension\OrderEx.cs" />
+    <Compile Include="Context\ViewModels\BrandVm.cs" />
+    <Compile Include="Context\ViewModels\CartVm.cs" />
+    <Compile Include="Context\ViewModels\ContactUsVm.cs" />
+    <Compile Include="Context\ViewModels\OrderVsMonthOrYearVm.cs" />
+    <Compile Include="Context\ViewModels\ProductImageVm.cs" />
+    <Compile Include="Context\ViewModels\ProductUnitVm.cs" />
+    <Compile Include="Context\ViewModels\SalesOverTimeVm.cs" />
+    <Compile Include="Context\ViewModels\WishListVm.cs" />
+    <Compile Include="Dtos\CouponDiscountDto.cs" />
+    <Compile Include="Dtos\DeliveryManDto.cs" />
+    <Compile Include="Dtos\DeliveryManShortInfoToReturnDto.cs" />
+    <Compile Include="Dtos\DeliveryManUserInfo.cs" />
+    <Compile Include="Dtos\OrderDetailToReturnDto.cs" />
+    <Compile Include="Dtos\OrdersByStatusToReturnDto.cs" />
+    <Compile Include="Dtos\OrderToReturnDto.cs" />
+    <Compile Include="Dtos\ProductUnitDto.cs" />
+    <Compile Include="Dtos\RatingToReturnDto.cs" />
+    <Compile Include="Dtos\SalesByLocationToReturnDto.cs" />
+    <Compile Include="Dtos\SalesByProductToReturnDto.cs" />
+    <Compile Include="Dtos\TotalOrdersToReturnDto.cs" />
+    <Compile Include="Dtos\ChangePasswordDto.cs" />
+    <Compile Include="Dtos\ViewAssigedOrdersByDeliveryManDto.cs" />
+    <Compile Include="Enums\ConfigurationEnum.cs" />
+    <Compile Include="Enums\DiscountTypeEnum.cs" />
+    <Compile Include="Enums\OrderStatusEnum.cs" />
+    <Compile Include="Enums\ProductTypeEnum.cs" />
+    <Compile Include="Enums\UserTypeEnum.cs" />
+    <Compile Include="Helpers\CouponParams.cs" />
+    <Compile Include="Helpers\OrderGrowthRateParams.cs" />
+    <Compile Include="Helpers\OrdersByStatusParams.cs" />
+    <Compile Include="Helpers\SalesByLocationParams.cs" />
+    <Compile Include="Helpers\SalesByProductParams.cs" />
+    <Compile Include="Helpers\TotalOrdersParams.cs" />
+    <Compile Include="Interfaces\Managers\IAssignOrderManager.cs" />
+    <Compile Include="Interfaces\Managers\IConfigurationManager.cs" />
+    <Compile Include="Interfaces\Managers\IDeliveryChargeManager.cs" />
+    <Compile Include="Interfaces\Managers\IDeliveryManManager.cs" />
+    <Compile Include="Interfaces\Managers\IBrandManager.cs" />
+    <Compile Include="Interfaces\Managers\ICartManager.cs" />
+    <Compile Include="Interfaces\Managers\ICategoryManager.cs" />
+    <Compile Include="Interfaces\Managers\ICommonManager.cs" />
+    <Compile Include="Interfaces\Managers\ICorporateContractManager.cs" />
+    <Compile Include="Interfaces\Managers\ICorporateDepartmentManager.cs" />
+    <Compile Include="Interfaces\Managers\ICorporateDesignationManager.cs" />
+    <Compile Include="Interfaces\Managers\ICorporateUserManager.cs" />
+    <Compile Include="Interfaces\Managers\ICouponManager.cs" />
+    <Compile Include="Interfaces\Managers\ICustomerManager.cs" />
+    <Compile Include="Interfaces\Managers\IDistributorManager.cs" />
+    <Compile Include="Interfaces\Managers\IDistributorProductLineManager.cs" />
+    <Compile Include="Interfaces\Managers\IDistrictManager.cs" />
+    <Compile Include="Interfaces\Managers\IFAQManager.cs" />
+    <Compile Include="Interfaces\Managers\ILPGComboDiscountManager.cs" />
+    <Compile Include="Interfaces\Managers\IMasterDepotDeliveryManManager.cs" />
+    <Compile Include="Interfaces\Managers\IMasterDepotManager.cs" />
+    <Compile Include="Interfaces\Managers\IMasterDepotProductLineManager.cs" />
+    <Compile Include="Interfaces\Managers\IMeghnaDepartmentManager.cs" />
+    <Compile Include="Interfaces\Managers\IMeghnaDesignationManager.cs" />
+    <Compile Include="Interfaces\Managers\IMeghnaUserManager.cs" />
+    <Compile Include="Interfaces\Managers\IOrderDetailManager.cs" />
+    <Compile Include="Interfaces\Managers\IOrderHistoryManager.cs" />
+    <Compile Include="Interfaces\Managers\IOrderManager.cs" />
+    <Compile Include="Interfaces\Managers\IOrderRejectManager.cs" />
+    <Compile Include="Interfaces\Managers\IOrderStateManager.cs" />
+    <Compile Include="Interfaces\Managers\IPaymentDetailManager.cs" />
+    <Compile Include="Interfaces\Managers\IProductDiscountManager.cs" />
+    <Compile Include="Interfaces\Managers\IProductImageManager.cs" />
+    <Compile Include="Interfaces\Managers\IProductLineDetailManager.cs" />
+    <Compile Include="Interfaces\Managers\IProductLineManager.cs" />
+    <Compile Include="Interfaces\Managers\IProductManager.cs" />
+    <Compile Include="Interfaces\Managers\IProductTypeManager.cs" />
+    <Compile Include="Interfaces\Managers\IProductUnitManager.cs" />
+    <Compile Include="Interfaces\Managers\IProductUnitPriceManager.cs" />
+    <Compile Include="Interfaces\Managers\IRatingManager.cs" />
+    <Compile Include="Interfaces\Managers\ISubscriberManager.cs" />
+    <Compile Include="Interfaces\Managers\IThanaManager.cs" />
+    <Compile Include="Interfaces\Managers\IThanaWiseMasterDepotManager.cs" />
+    <Compile Include="Interfaces\Managers\IUserDiscountManager.cs" />
+    <Compile Include="Interfaces\Managers\IUserManager.cs" />
+    <Compile Include="Interfaces\Managers\IUserTypeManager.cs" />
+    <Compile Include="Interfaces\Managers\IWishListManager.cs" />
+    <Compile Include="Interfaces\Repositories\IAssignOrderRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IBrandRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ICartRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ICategoryRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ICommonRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IConfigurationRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ICorporateContractRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ICorporateDepartmentRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ICorporateDesignationRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ICorporateUserRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ICouponRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ICustomerRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IDeliveryChargeRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IDeliveryManRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IDiscountTypeRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IDistributorProductLineRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IDistributorRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IDistrictRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IFAQRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ILPGComboDiscountRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IMasterDepotDeliveryManRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IMasterDepotProductLineRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IMasterDepotRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IMeghnaDepartmentRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IMeghnaDesignationRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IMeghnaUserRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IOrderDetailRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IOrderHistoryRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IOrderRejectRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IOrderRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IOrderStateRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IPaymentDetailRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IProductDiscountRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IProductImageRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IProductLineDetailRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IProductLineRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IProductRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IProductTypeRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IProductUnitPriceRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IProductUnitRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IRatingRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ISubscriberRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IThanaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IThanaWiseMasterDepotRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IUserDiscountRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IUserRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IUserTypeRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IWishListRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Context\FreshStore.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FreshStore1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App.Config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Context\FreshStore.edmx.diagram">
+      <DependentUpon>FreshStore.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

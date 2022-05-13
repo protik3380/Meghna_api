@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using EFreshStoreCore.Model.Context;
+using EFreshStoreCore.Model.Interfaces.Repositories;
+
+namespace EFreshStoreCore.Repository
+{
+    public class ConfigurationRepository : CommonRepository<Configuration>, IConfigurationRepository
+    {
+        public ConfigurationRepository() : base(new FreshContext())
+        {
+
+        }
+    }
+    
+}
